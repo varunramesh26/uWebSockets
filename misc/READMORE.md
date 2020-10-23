@@ -1,13 +1,13 @@
-# µWebSockets v0.17 user manual
+# µWebSockets v18 user manual
 
 For a list of frequently asked questions you may filter the GitHub issue tracker by label FAQ. Please don't misuse the issue tracker as your personal Q&A.
 
 ## Motivation and goals
-µWebSockets is a simple to use yet thoroughly optimized implementation of HTTP and WebSockets.
-It comes with built-in pub/sub support, HTTP routing, TLS 1.3, IPv6, permessage-deflate and is battle tested as one of the most popular implementations, reaching many end-users daily.
-Unlike other "pub/sub brokers", µWS does not assume or push any particular protocol but only operates over standard WebSockets.
+µWebSockets is a simple to use yet thoroughly optimized, standards compliant and secure implementation of WebSockets (and HTTP).
+It comes with built-in pub/sub support, URL routing, TLS 1.3, IPv6, permessage-deflate and is battle tested as one of the most popular implementations, reaching many millions of end-users daily.
+Unlike other "pub/sub brokers", µWS does not assume or push any particular application protocol but only operates over raw, standard WebSockets. That is, you need nothing but a standards compliant web browser and a handful of standards compliant JavaScript to connect to it. No particular client library is needed.
 
-The implementation is header-only C++17, cross-platform and compiles down to a tiny binary of a handful kilobytes.
+The implementation is header-only C++17 (but examples use C++20 features for brevity and elegance!), cross-platform and compiles down to a tiny binary of a handful kilobytes.
 It depends on µSockets, which is a standard C project for Linux, macOS & Windows.
 
 Performance wise you can expect to outperform, or equal, just about anything similar out there, that's the fundamental goal of the project.
